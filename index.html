@@ -52,13 +52,49 @@
             weather here
           </div> -->
         </div>
-        <!-- STUB todos draw here -->
-        <div class="col-9">
-          <div class="bg-info rounded">
-            todos here
+      </div>
+      <div class="row justify-content-end " id="todo-row">
+        <div id="todo-collapse" class="col-4 todo-col collapse">
+          <div class=" todo-display p-2" id="todo-display">
+            <p class="text-center display-none pt-1" id="todo-count">Todos: <span id="completed">4</span>/<span
+                id="total">6</span></p>
+            <div class="text-center pb-5 px-2" id="todo-list">
+              <p class="m-0">Get Motivated!</p>
+              <p class="m-0  pt-2 pb-2">Enter a name to create a todo</p>
+              <!-- <div class="d-flex justify-content-between align-items-baseline todo-item">
+                          <i class="mdi mdi-checkbox-blank text-white"
+                            onclick="app.todosController.completeTodo('${this.id}')"></i>
+                          <p class="px-2">description</p>
+                          <div class="dropdown">
+                            <div class="dropdown-toggle selectable text-end" data-bs-toggle="dropdown" aria-expanded="false"
+                              id="todoDropdown" title="todo">
+                              <span class="todo-menu hoverable">...</span>
+                            </div>
+                            <div class="dropdown-menu p-0" aria-labelledby="todoDropdown">
+                              <div class="hoverable selectable">
+                                Delete
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+              <!-- <button onclick="app.todosController.showTodoForm()" class="todo-button" id="todo-button">New
+                          todo</button> -->
+            </div>
+            <div class="display-none todo-form mt-5" id="todo-form">
+              <form onsubmit="app.todosController.createTodo()">
+                <input class="todo-input" type="text" name="description" placeholder="New Todo">
+              </form>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-1 justify-content-end bottom-row right pb-2">
+        <button data-bs-toggle="collapse" data-bs-target="#todo-collapse" class="todo-toggle fs-5">Todo</button>
+
+      </div>
+    </div>
     </div>
   </main>
   <footer class="bg-dark text-light">

@@ -11,11 +11,18 @@ function _drawVibesList() {
     setHTML('vibes', template)
 }
 
+function _drawActive() {
+    let vibe = appState.activeVibe
+    document.body.style.backgroundImage = `url(${vibe.imgUrl})`
+    // TODO add the player template to the model and draw here as well
+}
+
 export class VibesController {
     constructor() {
         console.log('hello from the vibes controller')
         this.getVibes()
         appState.on('vibes', _drawVibesList)
+        appState.on('activeVibe', _drawActive)
     }
 
     async getVibes() {

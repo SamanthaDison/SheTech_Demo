@@ -15,6 +15,9 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/Vibe').Vibe}*/
   activeVibe = null
+
+  /** @type {import('./Models/Weather').Weather}*/
+  weather = null
 }
 
 export const appState = new Proxy(new AppState(), {

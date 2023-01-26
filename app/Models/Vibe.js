@@ -6,4 +6,9 @@ export class Vibe {
         this.musicSource = data.musicSource
         this.plays = data.plays
     }
+
+    get VibesTemplate() {
+        return `  <button onclick="app.vibesController.getActive('${this.id}')">${this.name}</button>`
+    }
+
 }

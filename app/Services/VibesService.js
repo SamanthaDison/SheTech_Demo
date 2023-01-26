@@ -10,6 +10,12 @@ class VibesService {
         console.log('vibes', appState.vibes)
     }
 
+    async getActive(id) {
+        const res = await musicApi.get(`api/vibes/${id}`)
+        // console.log(res.data);
+        appState.activeVibe = new Vibe(res.data)
+        console.log('active', appState.activeVibe);
+    }
 }
 
 export const vibesService = new VibesService()

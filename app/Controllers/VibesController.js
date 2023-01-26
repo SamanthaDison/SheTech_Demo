@@ -7,7 +7,7 @@ import { setHTML } from "../Utils/Writer.js"
 function _drawVibesList() {
     let vibes = appState.vibes
     let template = ''
-    vibes.forEach(v => template += `${v.name}`)
+    vibes.forEach(v => template += v.VibesTemplate)
     setHTML('vibes', template)
 }
 
@@ -21,6 +21,15 @@ export class VibesController {
     async getVibes() {
         try {
             await vibesService.getVibes()
+        } catch (error) {
+            Pop.error(error)
+        }
+    }
+
+    async getActive(id) {
+        // console.log(id);
+        try {
+            await vibesService.getActive(id)
         } catch (error) {
             Pop.error(error)
         }

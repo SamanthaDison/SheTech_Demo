@@ -8,7 +8,14 @@ export class Vibe {
     }
 
     get VibesTemplate() {
-        return `  <button onclick="app.vibesController.getActive('${this.id}')">${this.name}</button>`
+        return `  
+        <button onclick="app.vibesController.getActive('${this.id}')" id="slide-1">${this.name}</button>`
+
+        
     }
 
 }
+
+
+{/* <button onclick="app.vibesController.getActive('${this.id}')">${this.name}</button> */}
+        

@@ -53,10 +53,6 @@
 
 
 /* SECTION Vibes Carousel  */
-/* * {
-    box-sizing: border-box;
-} */
-
 html{
     overflow-x: hidden;
 }
@@ -128,4 +124,12 @@ html{
     .slider > a{
         display: none;
     }
+}
+
+
+.clock-style{
+    font-size: 100px;
+    color: #eee;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.63);
+    border-bottom: 5px solid #eee;
 }

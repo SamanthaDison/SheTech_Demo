@@ -9,7 +9,7 @@ export class Vibe {
 
     get VibesTemplate() {
         return `  
-        <button onclick="app.vibesController.getActive('${this.id}')" id="slide-1">${this.name}</button>`
+        <button class="slide-button" onclick="app.vibesController.getActive('${this.id}')" id="slide-1">${this.name}</button>`
     }
 
     get PlayerTemplate() {
@@ -18,8 +18,10 @@ export class Vibe {
       <h1> ${this.name}</h1>
       <p class="w-100 text-end"><b>plays ${this.plays}</b></p>
     </div>
-    <iframe id="sound-cloud" width="250" height="300" scrolling="no" frameborder="no" allow="autoplay"
+    <div class="text-end p-3">
+    <iframe id="sound-cloud" class="" width="250" height="250" scrolling="no" frameborder="no" allow="autoplay"
     src="${this.musicSource}"></iframe>
+    </div>
     `
     }
 

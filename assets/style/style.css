@@ -74,10 +74,18 @@ html {
 }
 
 .slider {
-    width: 450px;
+    width: 100%;
     text-align: center;
     overflow: hidden;
+    background-color: palevioletred;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
+
+/* .slide-button {
+    background-color: green;
+} */
 
 .slides {
     display: flex;
@@ -107,9 +115,9 @@ html {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 300px;
-    height: 100px;
+    height: 50px;
     margin-right: 50px;
-    background: #eee;
+    background: rgb(186, 74, 74);
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;

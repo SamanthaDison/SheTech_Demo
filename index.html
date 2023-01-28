@@ -16,18 +16,10 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">SheTech_Demo</span>
-      </a>
-    </nav>
-  </header>
+
   <main>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row justify-content-between pe-5">
         <div class="col-6">
           <!-- STUB here will be the media player -->
           <div class=" media-player">
@@ -39,7 +31,7 @@
             <div id="activeVibe">
             </div>
           </div>
-          <div class="pt-3">
+          <div class=" pt-3">
             <!-- Carousel here -->
             <div class="slider">
               <a href="#slide-1">1</a>
@@ -109,6 +101,11 @@
             </div>
           </div>
         </div>
+        <!-- STUB weather draws here -->
+        <div class="col-4 pt-5">
+          <div id="weather" class="bg-danger">
+          </div>
+        </div>
       </div>
       <div class="row justify-content-center">
         <!-- STUB time draws here -->
@@ -116,14 +113,7 @@
           <p class="clock-style" id="clock"></p>
         </div>
       </div>
-      <div class="row">
-        <!-- STUB weather draws here -->
-        <div class="col-4 bg-danger" id="weather">
-          <!-- <div class="bg-warning">
-            weather here
-          </div> -->
-        </div>
-      </div>
+
       <div class="row justify-content-end " id="todo-row">
         <div id="todo-collapse" class="col-4 todo-col collapse">
           <div class=" todo-display p-2" id="todo-display">

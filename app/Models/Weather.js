@@ -8,7 +8,7 @@ export class Weather {
         this.icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
         this.isFahrenheit = true
         this.fahrenheitFeelsLike = data.main.feels_like
-        this.fahrenheitFeelsLike = (((data.main.feels_like -273.15)*1.8)+32).toFixed()
+        this.fahrenheitFeelsLike = (((data.main.feels_like - 273.15) * 1.8) + 32).toFixed()
     }
 
     get WeatherTemplate() {

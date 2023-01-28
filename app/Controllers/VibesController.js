@@ -15,6 +15,9 @@ function _drawActive() {
     let vibe = appState.activeVibe
     document.body.style.backgroundImage = `url(${vibe.imgUrl})`
     // TODO add the player template to the model and draw here as well
+    document.getElementById('activeVibe').innerHTML = vibe.PlayerTemplate
+    document.getElementById('volume-control').style.display = 'flex'
+
 }
 
 export class VibesController {
@@ -42,5 +45,13 @@ export class VibesController {
         }
     }
 
+    setVolume(event) {
+        console.log(event.target.value);
+        let volume = event.target.value
+        const iframeElement = document.querySelector('iframe');
+        // @ts-ignore
+        const widgetPlayer = SC.Widget(iframeElement);
+        widgetPlayer.setVolume(volume)
+    }
 
 }

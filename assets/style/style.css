@@ -8,6 +8,12 @@ main {
     background-repeat: no-repeat;
 }
 
+/* SECTION vibe player */
+
+.media-player {
+    background-color: pink;
+}
+
 /* SECTION todo component styles */
 .todo-col {
     position: absolute;

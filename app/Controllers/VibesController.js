@@ -49,6 +49,7 @@ export class VibesController {
         console.log(event.target.value);
         let volume = event.target.value
         const iframeElement = document.querySelector('iframe');
+        // @ts-ignore
         const widgetPlayer = SC.Widget(iframeElement);
         widgetPlayer.setVolume(volume)
     }

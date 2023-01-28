@@ -12,7 +12,7 @@ function _drawTodos() {
     //           <p class="m-0 pb-2">Enter a name to create a todo</p>`
     //     return
     // }
-    if (user != null && todos.length > 0) {
+    if (todos.length > 0) {
         document.getElementById('todo-form').style.display = "block";
         document.getElementById('todo-count').style.display = "block";
         document.getElementById('completed').innerText = completedTodos.length.toString()
@@ -56,6 +56,41 @@ export class TodosController {
     async getTodos() {
         try {
             await todosService.getTodos()
+        } catch (error) {
+            Pop.error(error)
+        }
+    }
+
+    createTodo() {
+        try {
+            window.event.preventDefault()
+            const form = window.event.target
+            const newTodo = {
+                // @ts-ignore
+                description: form.description.value
+            }
+            // console.log(newTodo);
+            todosService.createTodo(newTodo)
+            // @ts-ignore
+            form.reset()
+        } catch (error) {
+            Pop.error(error)
+        }
+    }
+
+    async completeTodo(id) {
+        try {
+            await todosService.completeTodo(id)
+        } catch (error) {
+            Pop.error(error)
+        }
+    }
+
+    async deleteTodo(id) {
+        try {
+            if (await Pop.confirm('Are you sure you want to delete this todo?')) {
+                await todosService.deleteTodo(id)
+            }
         } catch (error) {
             Pop.error(error)
         }

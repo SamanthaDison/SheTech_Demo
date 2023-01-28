@@ -1,5 +1,14 @@
 /* BASIC STYLES HERE */
 
+main {
+    /* background-image: url("https://images.unsplash.com/photo-1547961547-321889bff29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80");
+    back */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* SECTION todo component styles */
 .todo-col {
     position: absolute;
     bottom: 4rem;
@@ -52,8 +61,9 @@
 }
 
 
+
 /* SECTION Vibes Carousel  */
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -72,18 +82,22 @@ html{
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
+
 .slides::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
+
 .slides::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 10px;
 }
+
 .slides::-webkit-scrollbar-track {
     background: transparent;
 }
-.slides > button {
+
+.slides>button {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 300px;
@@ -94,14 +108,14 @@ html{
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
 }
 
-.slider > a {
+.slider>a {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -112,22 +126,24 @@ html{
     margin: 0 0 0.5rem 0;
     position: relative;
 }
-.slider > a:active {
+
+.slider>a:active {
     top: 1px;
 }
-.slider > a:focus {
+
+.slider>a:focus {
     background: #000;
 }
 
 /* Don't need button navigation */
-@supports(scroll-snap-type: none){
-    .slider > a{
+@supports(scroll-snap-type: none) {
+    .slider>a {
         display: none;
     }
 }
 
 
-.clock-style{
+.clock-style {
     font-size: 100px;
     color: #eee;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.63);

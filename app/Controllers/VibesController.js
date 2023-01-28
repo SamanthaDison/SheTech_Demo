@@ -24,6 +24,8 @@ export class VibesController {
     constructor() {
         console.log('hello from the vibes controller')
         this.getVibes()
+        document.body.style.backgroundImage = `url('https://images.unsplash.com/photo-1585834697738-983d6f0365bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80')`
+
         appState.on('vibes', _drawVibesList)
         appState.on('activeVibe', _drawActive)
     }

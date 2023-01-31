@@ -121,13 +121,14 @@
 
       <div class="row justify-content-end " id="todo-row">
         <div id="todo-collapse" class="col-4 todo-col collapse">
-          <div class=" todo-display p-2" id="todo-display">
-            <p class="text-center display-none pt-1" id="todo-count">Todos: <span id="completed">4</span>/<span
-                id="total">6</span></p>
-            <div class="text-center pb-5 px-2" id="todo-list">
-              <p class="m-0">Get Motivated!</p>
-              <p class="m-0  pt-2 pb-2">Enter a name to create a todo</p>
-              <!-- <div class="d-flex justify-content-between align-items-baseline todo-item">
+          <div class=" todo-display" id="todo-display">
+            <p class="text-center display-none pt-1 press-start" id="todo-count">Todos: <span
+                id="completed">4</span>/<span id="total">6</span></p>
+            <div class="todo-inner-display">
+              <div class="text-center " id="todo-list">
+                <p class="m-0">Get Motivated!</p>
+                <p class="m-0  pt-2 pb-2">Enter a name to create a todo</p>
+                <!-- <div class="d-flex justify-content-between align-items-baseline todo-item">
                           <i class="mdi mdi-checkbox-blank text-white"
                             onclick="app.todosController.completeTodo('${this.id}')"></i>
                           <p class="px-2">description</p>
@@ -143,13 +144,14 @@
                             </div>
                           </div>
                         </div> -->
-              <!-- <button onclick="app.todosController.showTodoForm()" class="todo-button" id="todo-button">New
+                <!-- <button onclick="app.todosController.showTodoForm()" class="todo-button" id="todo-button">New
                           todo</button> -->
-            </div>
-            <div class="display-none todo-form mt-5" id="todo-form">
-              <form onsubmit="app.todosController.createTodo()">
-                <input class="todo-input" type="text" name="description" placeholder="New Todo">
-              </form>
+              </div>
+              <div class="display-none todo-form" id="todo-form">
+                <form onsubmit="app.todosController.createTodo()">
+                  <input maxlength="15" class="todo-input" type="text" name="description" placeholder="New Todo">
+                </form>
+              </div>
             </div>
           </div>
         </div>

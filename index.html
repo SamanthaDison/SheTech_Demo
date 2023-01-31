@@ -10,6 +10,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
     integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>SheTech_Demo</title>
@@ -102,8 +105,8 @@
           </div>
         </div>
         <!-- STUB weather draws here -->
-        <div class="col-4 pt-5">
-          <div id="weather" class="bg-danger">
+        <div class="col-4 pt-5 ">
+          <div id="weather" class="weather-box">
           </div>
         </div>
       </div>
@@ -150,14 +153,15 @@
         </div>
       </div>
     </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
     <div class="row justify-content-end">
       <div class="col-1 justify-content-end bottom-row right pb-2">
         <button data-bs-toggle="collapse" data-bs-target="#todo-collapse" class="todo-toggle fs-5">Todo</button>
-
       </div>
     </div>
-    </div>
-  </main>
+  </footer>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>

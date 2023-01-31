@@ -1,5 +1,10 @@
 /* BASIC STYLES HERE */
 
+.press-start {
+    font-family: 'Press Start 2P',
+        cursive;
+}
+
 main {
     /* background-image: url("https://images.unsplash.com/photo-1547961547-321889bff29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80");
     back */
@@ -7,6 +12,45 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* SECTION weather component styles */
+.weather-box {
+    border-width: 5px;
+    border-style: outset;
+    border-color: #ff97ca;
+    background-color: #f9d5e7;
+    box-shadow: 3px 3px #504e4f70
+}
+
+/* #ff97ca */
+/* #fc9bcb */
+
+.weather-header {
+    background-color: #c2bce4;
+    margin: 4px;
+    padding: 2px;
+    border: pink;
+    border-style: outset;
+
+}
+
+.weather-body {
+    border-style: outset;
+    border-color: pink;
+    border-width: 3px;
+    margin: 4px;
+    background-color: lavenderblush;
+    font-size: small;
+    color: #9a84bf;
+}
+
+/* #9a84bf */
+/* #7f62b0 */
+
+.fs-temp {
+    /* font-size: 2em; */
+}
+
 
 /* SECTION vibe player */
 

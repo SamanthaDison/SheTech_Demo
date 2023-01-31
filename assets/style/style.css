@@ -5,6 +5,11 @@
         cursive;
 }
 
+.VT {
+    font-family: 'VT323',
+        monospace;
+}
+
 main {
     /* background-image: url("https://images.unsplash.com/photo-1547961547-321889bff29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80");
     back */
@@ -22,6 +27,7 @@ main {
     box-shadow: 3px 3px #504e4f70
 }
 
+
 /* #ff97ca */
 /* #fc9bcb */
 
@@ -31,8 +37,8 @@ main {
     padding: 2px;
     border: pink;
     border-style: outset;
-
 }
+
 
 .weather-body {
     border-style: outset;
@@ -55,7 +61,29 @@ main {
 /* SECTION vibe player */
 
 .media-player {
-    background-color: pink;
+    border-width: 5px;
+    border-style: outset;
+    border-color: #ff97ca;
+    background-color: #f9d5e7;
+    box-shadow: 3px 3px #504e4f70
+}
+
+#volume-control {
+    margin: 4px;
+    background-color: #c2bce4;
+    color: white;
+    border: pink;
+    border-style: outset;
+}
+
+#activeVibe {
+    border-style: outset;
+    border-color: pink;
+    border-width: 3px;
+    margin: 4px;
+    background-color: lavenderblush;
+    font-size: small;
+    color: #9a84bf;
 }
 
 /* SECTION todo component styles */
@@ -121,10 +149,14 @@ html {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    background-color: palevioletred;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    border-width: 5px;
+    border-style: outset;
+    border-color: #ff97ca;
+    background-color: #f9d5e7;
+    box-shadow: 3px 3px #504e4f70;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 /* .slide-button {
@@ -147,7 +179,7 @@ html {
 }
 
 .slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: #e04a83;
     border-radius: 10px;
 }
 
@@ -161,7 +193,13 @@ html {
     width: 300px;
     height: 50px;
     margin-right: 50px;
-    background: rgb(186, 74, 74);
+    border-style: outset;
+    border-color: pink;
+    border-width: 3px;
+    background-color: lavenderblush;
+    font-size: small;
+    color: #9a84bf;
+
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
@@ -202,7 +240,8 @@ html {
 
 
 .clock-style {
-    font-size: 100px;
+    font-size: 140px;
+    /* font-weight: bolder; */
     color: #eee;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.63);
     border-bottom: 5px solid #eee;

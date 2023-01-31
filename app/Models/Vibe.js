@@ -9,13 +9,13 @@ export class Vibe {
 
     get VibesTemplate() {
         return `  
-        <button class="slide-button" onclick="app.vibesController.getActive('${this.id}')" id="slide-1">${this.name}</button>`
+        <button class="slide-button press-start fs-6" onclick="app.vibesController.getActive('${this.id}')" id="slide-1">${this.name}</button>`
     }
 
     get PlayerTemplate() {
         return `
     <div class="pe-4 text-shadow">
-      <h1> ${this.name}</h1>
+      <h4 class="pt-3 ps-3"> ${this.name}</h4>
       <p class="w-100 text-end"><b>plays ${this.plays}</b></p>
     </div>
     <div class="text-end p-3">

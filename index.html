@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>SheTech_Demo</title>
@@ -26,12 +29,11 @@
         <div class="col-6">
           <!-- STUB here will be the media player -->
           <div class=" media-player">
-            <div id="volume-control" class=" col-12 order-last order-md-first mt-3  justify-content-end"
-              style="display: none;">
+            <div id="volume-control" class="order-last order-md-first mt-3  justify-content-end" style="display: none;">
               <i class="mdi mdi-volume-high"></i>
               <input type="range" class="form-range" onchange="app.vibesController.setVolume(event)" value="100">
             </div>
-            <div id="activeVibe">
+            <div id="activeVibe" class="press-start">
             </div>
           </div>
           <div class=" pt-3">
@@ -54,7 +56,7 @@
               <a href="#slide-15">15</a>
 
               <!-- <button>vibe name</button> -->
-              <div class="slides" id="vibes">
+              <div class="slides " id="vibes">
                 <button id="slide-1">
                   1
                 </button>
@@ -113,7 +115,7 @@
       <div class="row justify-content-center">
         <!-- STUB time draws here -->
         <div class="col-6 text-center">
-          <p class="clock-style" id="clock"></p>
+          <p class="clock-style VT" id="clock"></p>
         </div>
       </div>
 
@@ -158,7 +160,8 @@
   <footer class="container-fluid">
     <div class="row justify-content-end">
       <div class="col-1 justify-content-end bottom-row right pb-2">
-        <button data-bs-toggle="collapse" data-bs-target="#todo-collapse" class="todo-toggle fs-5">Todo</button>
+        <button data-bs-toggle="collapse" data-bs-target="#todo-collapse"
+          class="todo-toggle fs-5 press-start">Todo</button>
       </div>
     </div>
   </footer>

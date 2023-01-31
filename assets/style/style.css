@@ -65,11 +65,13 @@ main {
 /* SECTION vibe player */
 
 .media-player {
+    /* width: 34vh; */
     border-width: 5px;
     border-style: outset;
     border-color: #ff97ca;
     background-color: #f9d5e7;
-    box-shadow: 3px 3px #504e4f70
+    box-shadow: 3px 3px #504e4f70;
+    /* margin-left: 5vh; */
 }
 
 #volume-control {
@@ -213,7 +215,7 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
-.slides::-webkit-scrollbar {
+/* .slides::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
@@ -225,7 +227,7 @@ html {
 
 .slides::-webkit-scrollbar-track {
     background: transparent;
-}
+} */
 
 .slides>button {
     scroll-snap-align: start;
